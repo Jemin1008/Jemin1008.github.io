@@ -1,0 +1,14 @@
+.top1{
+    color: white;
+    text-align: center;
+    font-size: large;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: -8px;
+}
+.bg{
+    width: contain;
+    background-image: url("https://wallpaperaccess.com/full/1764336.jpg");
+    background-size: cover;
+    background-color: gray;
+}
