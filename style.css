@@ -1,14 +1,54 @@
-.top1{
-    color: white;
-    text-align: center;
-    font-size: large;
-    background: rgba(0, 0, 0, 0.7);
+.header{
+    background: rgba(0, 0, 0, 0.9);
     padding: 20px;
     margin: -8px;
 }
-.bg{
-    width: contain;
-    background-image: url("https://wallpaperaccess.com/full/1764336.jpg");
-    background-size: cover;
-    background-color: gray;
+.top1{
+    color: white;
+    text-align: left;
+    font-size: 30px;
+	margin-top: -25px;
+	margin-bottom: -5px;
+	text-decoration:none;
+	font-family: 'Bangers', cursive;
+}
+input[id="menuicon"] {
+	display:none;
+}
+input[id="menuicon"] + label {
+	display:block;
+	width:30px;
+	height:20px;
+	position:relative;
+	right: -96%;
+}
+input[id="menuicon"] + label span {
+	display:block;
+	position:absolute;
+	width:100%;
+	height:20%;
+	border-radius:30px;
+	background:white;
+	transition:all .35s;
+}
+input[id="menuicon"] + label span:nth-child(1) {
+	top:0;
+}
+input[id="menuicon"] + label span:nth-child(2) {
+	top:50%;
+	transform:translatey(-50%);
+}
+input[id="menuicon"] + label span:nth-child(3) {
+	bottom:0%;
+}
+input[id="menuicon"]:checked + label span:nth-child(1) {
+	top:50%;
+	transform:translatey(-50%) rotate(45deg);
+}
+input[id="menuicon"]:checked + label span:nth-child(2) {
+	opacity:0;
+}
+input[id="menuicon"]:checked + label span:nth-child(3) {
+	bottom:50%;
+	transform:translatey(50%) rotate(-45deg);
 }
